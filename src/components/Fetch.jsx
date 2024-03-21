@@ -28,14 +28,13 @@ export const Fetch = ({ message, hearts }) => {
 
   return (
     <div className="thoughtContainer">
-      <div>{getThought}</div>
-      {message.map(({message, hearts}) => (
-        //console.log()
-      ))}
+      <div id="message">{message}</div>
       <div className="loadingThoughts">
         {loadingThoughts ? "Loading thoughts..." : getThought}
-     </div>
-      Fetch thoughts
+      </div>
+      <div id="hearts">{hearts}</div>
+      <div id="message">{message}</div>
     </div>
   );
 };
+
