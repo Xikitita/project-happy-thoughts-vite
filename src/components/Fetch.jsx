@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./fetch.css"
 
 export const Fetch = ({ message, hearts }) => {
   const [getThought, setGetThought] = useState("");
@@ -37,4 +38,3 @@ export const Fetch = ({ message, hearts }) => {
     </div>
   );
 };
-
