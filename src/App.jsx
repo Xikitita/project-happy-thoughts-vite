@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { Fetch } from "./components/Fetch";
-import { Post } from "./Post"
 
-//try to empty App.jsx, make new component for fetchThought
+
 export const App = () => {
   const [fetchThought, setFetchThought] = useState([]);
 
@@ -28,7 +27,6 @@ export const App = () => {
           time={thought.createdAt}
         />
       ))}
-      <Post />
     </div>
   );
 };
