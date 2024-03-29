@@ -3,6 +3,7 @@ import "./fetch.css";
 import { PostForm } from "./PostForm";
 //import { ThoughtList } from "./ThoughtList";
 
+
 export const Fetch = ({ message, hearts, time }) => {
   const [getThought, setGetThought] = useState("");
   const [loadingThoughts, setLoadingThoughts] = useState(true);

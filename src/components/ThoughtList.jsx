@@ -44,6 +44,7 @@ export const ThoughtList = ({ loadingThoughts }) => {
             </p>
           </div>
         ))
+
         //IS tHE REVERSE.method NEEDED? its for reversing order of appearance of posts, from new to old
         // .reverse()
         //This one will show the first 10 posts:
@@ -52,3 +53,4 @@ export const ThoughtList = ({ loadingThoughts }) => {
     </section>
   );
 };
+
