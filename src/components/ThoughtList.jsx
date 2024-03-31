@@ -1,5 +1,6 @@
 import { formatDistance } from "date-fns";
 
+
 export const ThoughtList = ({
   loadingThoughts,
   thoughtList,
@@ -28,8 +29,10 @@ export const ThoughtList = ({
       });
 
     //SEE IF THIS IS NEEDED AFTER ADDING LIKE BUTTON
+
     setThoughtList((thoughtList) =>
       thoughtList.map((singleThought) =>
+
         singleThought._id === thought._id ? updatedThought : singleThought
       )
     );
@@ -39,6 +42,7 @@ export const ThoughtList = ({
       {
         thoughtList.map((newThought) => (
           <div key={thought._id} id="thought">
+
             <input
               onChange={() => onThoughtCheckChange(newThought)}
               type="checkbox"
@@ -52,6 +56,7 @@ export const ThoughtList = ({
             </p>
           </div>
         ))
+
         //IS tHE REVERSE.method NEEDED? its for reversing order of appearance of posts, from new to old
         // .reverse()
         //This one will show the first 10 posts:
@@ -60,3 +65,4 @@ export const ThoughtList = ({
     </section>
   );
 };
+
