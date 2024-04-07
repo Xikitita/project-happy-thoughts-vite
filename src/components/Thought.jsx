@@ -5,7 +5,8 @@ import { formatDistanceToNow } from "date-fns";
 export const Thought = ({ id, message, hearts, time }) => {
   const [likes, setLikes] = useState("");
 
-  const handleClick = () => {
+  
+const handleClick = () => {
     fetch(
       `https://happy-thoughts-ux7hkzgmwa-uc.a.run.app/thoughts/${id}/like`,
       {

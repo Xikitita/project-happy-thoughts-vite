@@ -1,6 +1,7 @@
 .thought-container {
   background-color: white;
   display: flex;
+
   flex-direction: column;
   width: 415px;
   border: 1px solid black;
@@ -11,7 +12,7 @@
 
 .message {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  monospace;
   padding: 5px;
   margin-bottom: 5px;
   font-weight: 550;
@@ -22,9 +23,6 @@
   border-radius: 15px;
   padding: 5px;
   border: 0;
-}
-.heart-button button:hover {
-  transform: scale(2);
 }
 
 .liked-button {
@@ -44,3 +42,4 @@
 span {
   opacity: 0.5;
 }
+
