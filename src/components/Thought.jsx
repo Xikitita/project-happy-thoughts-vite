@@ -1,4 +1,4 @@
-import "./thought.css";
+import "../css.components/thought.css";
 import { useState } from "react";
 
 export const Thought = ({
