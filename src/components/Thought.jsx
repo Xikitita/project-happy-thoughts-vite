@@ -7,7 +7,7 @@ export const Thought = ({ id, message, hearts, time }) => {
 
   const handleClick = () => {
     fetch(
-      `https://happy-thoughts-ux7hkzgmwa-uc.a.run.app/thoughts/${id}/like`,
+      `https://project-happy-thoughts-api-jggw.onrender.com/thoughts/${id}/like`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
