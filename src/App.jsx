@@ -4,7 +4,7 @@ import { PostForm } from "./components/PostForm";
 
 export const App = () => {
   const [fetchThought, setFetchThought] = useState([]);
-  const [newThought, setNewThought] = useState("");
+  const [newThought, setNewThought] = useState([]);
 
   const url = "https://project-happy-thoughts-api-jggw.onrender.com/thoughts";
 
